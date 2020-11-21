@@ -25,7 +25,6 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "postcss-loader": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
