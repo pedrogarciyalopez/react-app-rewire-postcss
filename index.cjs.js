@@ -1,4 +1,6 @@
-export default (config, options) => {
+'use strict';
+
+var index = (config, options) => {
 	// find any first matching rule that contains postcss-loader
 	filterPostCSSLoader(config.module.rules).forEach(rule => {
 		filterPostCSSLoader(rule.oneOf).forEach(oneOf => {
@@ -8,8 +10,8 @@ export default (config, options) => {
 
 				// conditionally replace options with a custom configuration
 				use.options = options ? options : use.options;
-			})
-		})
+			});
+		});
 	});
 
 	// return the mutated configuration
@@ -18,3 +20,6 @@ export default (config, options) => {
 
 // return a filtered array that includes postcss-loader
 const filterPostCSSLoader = array => array.filter(object => JSON.stringify(object).includes('postcss-loader'));
+
+module.exports = index;
+//# sourceMappingURL=index.cjs.js.map

@@ -24,21 +24,16 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.4.4",
-    "@babel/preset-env": "7.4.4",
-    "babel-eslint": "10.0.1",
     "eslint": "5.16.0",
     "eslint-config-dev": "2.0.0",
+    "postcss-loader": "^4.1.0",
     "pre-commit": "1.2.2",
-    "rollup": "1.11.3",
-    "rollup-plugin-babel": "4.3.2"
+    "rollup": "1.11.3"
   },
   "eslintConfig": {
-    "extends": "dev",
-    "parser": "babel-eslint"
+    "extends": "dev"
   },
   "keywords": [
     "react",
